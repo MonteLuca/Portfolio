@@ -266,6 +266,11 @@ img {
     box-shadow: 0 -1px 4px rgba(0, 0, 0, .15);
 }
 
+
+/* NO RESIZE TEXTAREA */
+.no-resize {
+    resize: none;
+}
 /*===================== HOME =====================*/
 .home__container {
     gap: 1rem;
@@ -1288,3 +1293,4 @@ img {
         grid-template-columns: repeat(2, 1fr);
     }
 }
+

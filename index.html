@@ -736,24 +736,24 @@
                         <div class="contact__inputs grid">
                             <div class="contact__content">
                                 <label for="" class="contact__label">Nombre</label>
-                                <input type="text" class="contact__input">
+                                <input type="text" id="nombre" class="contact__input" required>
                             </div>
                             <div class="contact__content">
                                 <label for="" class="contact__label">Email</label>
-                                <input type="email" class="contact__input">
+                                <input type="email" id="email" class="contact__input" required>
                             </div>
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Proyecto</label>
-                            <input type="text" class="contact__input">
+                            <input type="text" id="proyecto" class="contact__input" required>
                         </div>
                         <div class="contact__content">
                             <label for="" class="contact__label">Mensaje</label>
-                            <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                            <textarea name="" id="mensaje" cols="0" rows="7" class="contact__input no-resize" required></textarea>
                         </div>
 
                         <div>
-                            <a href="" class="button button--flex">
+                            <a href="" class="button button--flex" id="enviar-mensaje">
                                 Enviar mensaje
                                 <i class="uil uil-message button__icon"></i>
                             </a>

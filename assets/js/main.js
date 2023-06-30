@@ -194,3 +194,25 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+/*===================== WHATSAPP MENSAJE =====================*/
+document.getElementById("enviar-mensaje").addEventListener("click", function(e) {
+    e.preventDefault();
+
+    let nombre = document.getElementById("nombre").value;
+    let email = document.getElementById("email").value;
+    let proyecto = document.getElementById("proyecto").value;
+    let mensaje = document.getElementById("mensaje").value;
+
+    if (nombre === "" || email === "" || proyecto === "" || mensaje === "") {
+        alert("Por favor, complete los campos")
+    }
+
+    let whatsappMensaje = "!Hola! Mi nombre es " + nombre + ". Tengo un proyecto interesante llamado '" + proyecto + 
+                          "'. Mi correo electrónico es " + email + ". Aquí está mi mensaje: " + mensaje;
+                          
+    let encodeMensaje = encodeURIComponent(whatsappMensaje);
+    let whatsappLink = "https://wa.me/2615120574/?text=" + encodeMensaje;
+
+    window.open(whatsappLink, "_blank");
+})
