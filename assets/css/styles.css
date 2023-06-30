@@ -507,26 +507,26 @@ img {
 }
 
 .skills__html {
-    width: 90%;
+    width: 30%;
 }
 
 .skills__css {
-    width: 80%;
+    width: 30%;
 }
 
 .skills__js {
-    width: 60%;
+    width: 20%;
 }
 
 .skills__angular {
-    width: 50%;
+    width: 40%;
 }
 
 .skills__java {
-    width: 80%;
+    width: 70%;
 }
 .skills__node {
-    width: 60%;
+    width: 20%;
 }
 
 .skills__close .skills__list {
@@ -543,7 +543,7 @@ img {
     transform: rotate(-180deg);
 }
 
-/*===================== QUEALIFICATON =====================*/
+/*===================== QUALIFICATON =====================*/
 .qualification__tabs {
     display: flex;
     justify-content: space-evenly;
