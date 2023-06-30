@@ -206,6 +206,7 @@ document.getElementById("enviar-mensaje").addEventListener("click", function(e) 
 
     if (nombre === "" || email === "" || proyecto === "" || mensaje === "") {
         alert("Por favor, complete los campos")
+        return;
     }
 
     let whatsappMensaje = "!Hola! Mi nombre es " + nombre + ". Tengo un proyecto interesante llamado '" + proyecto + 
